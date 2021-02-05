@@ -1,0 +1,6 @@
+## C# IntelliSense & DIKU Style
+IntelliSense for C# in VSCode is provided through OmniSharp. Currently you have to have a .sln file for it to analyze your code.
+
+`.editorconfig` in this repository contains the config that enforces the specified [SU Style Guide](https://github.com/diku-dk/su20-guides/blob/master/guides/CSharpStyle.md). For this to take effect you **must have the C# and EditorConfig extensions**. These can be installed via the Marketplace or Extensions tab (on the left) in VS Code. Remember to restart after installing.
+
+Copy and place the `.editorconfig` file as is in the root of your project. Then proceed to open your preferences(`CTRL+SHIFT+P` => `>Preferences: Open Settings (UI)`), search OmniSharp and tick `Omnisharp: Enable Editor Config Support`. If the C# extension is installed a tiny flame should appear in the bottom left. Click this flame or `CTRL+SHIFT+P` and select `OmniSharp: Select Project` and choose the `.sln` to analyze. This `.sln` must have the `.csproj` added. Restart VS Code and the you should see the effects.

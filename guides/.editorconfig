@@ -1,0 +1,74 @@
+# EditorConfig helps developers define and maintain consistent
+# coding styles between different editors and IDEs
+# editorconfig.org
+
+root = true # Set to true to stop the .editorconfig file search on the current file.
+
+[*]
+indent_style = space
+
+[*.cs]
+indent_size = 4
+trim_trailing_whitespace = true
+
+# Avoid "this." and "Me." if not necessary
+dotnet_style_qualification_for_field = false:refactoring
+dotnet_style_qualification_for_property = false:refactoring
+dotnet_style_qualification_for_method = false:refactoring
+dotnet_style_qualification_for_event = false:refactoring
+
+# C# Formatting: https://docs.microsoft.com/en-us/visualstudio/ide/editorconfig-formatting-conventions?view=vs-2019
+dotnet_sort_system_directives_first = true
+csharp_new_line_before_open_brace = none
+csharp_new_line_before_else = false
+csharp_new_line_before_catch = false
+csharp_new_line_before_finally = false
+csharp_indent_case_contents = true
+csharp_indent_block_contents = true
+csharp_space_after_cast = false
+csharp_space_after_keywords_in_control_flow_statements = true
+csharp_space_before_colon_in_inheritance_clause = true
+csharp_space_around_binary_operators = before_and_after
+csharp_space_between_method_declaration_parameter_list_parentheses = false
+csharp_space_between_method_declaration_name_and_open_parenthesis = false
+csharp_space_between_method_call_parameter_list_parentheses = false
+csharp_space_between_method_call_empty_parameter_list_parentheses = false
+csharp_space_between_method_call_name_and_opening_parenthesis = false
+csharp_space_after_comma = true
+csharp_space_after_semicolon_in_for_statement = true
+csharp_space_before_semicolon_in_for_statement = false
+csharp_space_around_declaration_statements = false
+csharp_space_before_open_square_brackets = false
+csharp_space_between_square_brackets = false
+
+# C# Naming Conventions: https://docs.microsoft.com/en-us/visualstudio/ide/editorconfig-naming-conventions?view=vs-2019
+# Public must be uppercase
+dotnet_naming_rule.public_members_must_be_capitalized.symbols = public_symbols
+dotnet_naming_symbols.public_symbols.applicable_kinds = property,method,field,event,delegate
+dotnet_naming_symbols.public_symbols.applicable_accessibilities = public
+
+dotnet_naming_rule.public_members_must_be_capitalized.style = first_word_upper_case_style
+dotnet_naming_style.first_word_upper_case_style.capitalization = first_word_upper
+
+dotnet_naming_rule.public_members_must_be_capitalized.severity = warning
+
+# Const must be full uppercase
+dotnet_naming_rule.const_must_be_uppercase.symbols = const_uppercase
+dotnet_naming_symbols.const_uppercase.applicable_kinds = *
+dotnet_naming_symbols.const_uppercase.applicable_accessibilities = *
+dotnet_naming_symbols.const_uppercase.required_modifiers = const
+
+dotnet_naming_rule.const_must_be_uppercase.style = const_set_to_uppercase
+dotnet_naming_style.const_set_to_uppercase.capitalization = all_upper
+
+dotnet_naming_rule.const_must_be_uppercase.severity = warning
+
+# Private must be camelCase
+dotnet_naming_rule.private_must_be_camelCase.symbols = private_symbols
+dotnet_naming_symbols.private_symbols.applicable_kinds = field, method, property
+dotnet_naming_symbols.private_symbols.applicable_accessibilities = private
+
+dotnet_naming_rule.private_must_be_camelCase.style = private_set_to_camelCase
+dotnet_naming_style.private_set_to_camelCase.capitalization = camel_case
+
+dotnet_naming_rule.private_must_be_camelCase.severity = suggestion
