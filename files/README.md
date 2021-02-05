@@ -1,4 +1,4 @@
 # Overview
 
-  * [SU19 LaTeX Style](su19.sty); for a guide, see
+  * [SU21 LaTeX Style](su21.sty); for a guide, see
     [`ReportFormatting.md`](../guides/ReportFormatting.md).
