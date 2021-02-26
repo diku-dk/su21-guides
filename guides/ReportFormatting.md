@@ -2,10 +2,21 @@
 
 This guide will provide some advide on how to format and structure your technical reports.
 
-The [su20](https://github.com/diku-dk/su20-guides/blob/master/files/su20.sty)
+The [su21](https://github.com/diku-dk/su21-guides/blob/master/files/su21.sty)
 LaTeX package provides a template for your LaTeX reports in Software Development.
 
-To use it, you will have to install [Python 3](https://www.python.org/download/releases/3.0/),
+## Using su.sty on Overleaf
+
+If you want to use the su.sty report formatting with **Overleaf** you need to download the .sty file above.
+Then you proceed to upload this .sty file to your Overleaf. 
+
+You can then write `\usepackage{su21}` at the top of your main.tex. If this does not work ensure that the `\ProvidesPackage` inside the `.sty` file matches the one in your `\usepackage`. Recompile and you should see that it is being used and can then proceed to read through this guide. Installing Python and Pygments are only required if you want to use this `.sty` file on your local machine with LaTex.
+
+Do keep in mind that to use the `\inputminted` you do need to upload the files you want input to your overleaf and then provide the path (in the example a folder src and a file inside the folder code.cs)
+
+## Using su.sty on your Local Machine
+
+To use it on your local machine, you will have to install [Python 3](https://www.python.org/download/releases/3.0/),
 the Python package manager [pip](https://pip.pypa.io/en/stable/installing/),
 as well as the [Pygments](http://pygments.org/) package for Python:
 
@@ -44,7 +55,7 @@ When including code snippets we recommend using the `minted` package. It is a
 very nice environment for viewing code, as it allows for a lot of customization.
 
 For your convenience we provide a configuration for `minted` in
-`su20.sty` This configuration is not mandatory, but we expect that all included
+`su21.sty` This configuration is not mandatory, but we expect that all included
 code snippets are included through LaTeX code-packages and not as images.
 Furthermore we expect both syntax highlighting and line numbers. If you chose to
 use our configuration, including code is as easy as the following example:
@@ -111,5 +122,5 @@ Remember to make sure that `latexrun` is an executable (`sudo chmod +x latexrun`
 
 ### Final notes
 
-If `su20.sty` or any other files from this repository are changed during the course,
+If `su21.sty` or any other files from this repository are changed during the course,
 the changes will be announced on Absalon as well as on this repository. We will try our best to ensure backwards compatibility, so using a new version will not break your existing LaTeX-files.
