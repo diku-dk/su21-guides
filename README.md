@@ -17,7 +17,7 @@
 ## IDE and software
 We will be using Visual Studio Code for the course.
 
-We use .NET Core 3.1 and the `dotnet cli-tool` to create, build and execute projects.
+We use .NET and the `dotnet cli-tool` to create, build and execute projects.
 
 We use NUnit for unit testing. 
 
