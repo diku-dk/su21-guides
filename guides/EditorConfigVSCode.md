@@ -3,7 +3,7 @@ IntelliSense for C# in VSCode is provided through OmniSharp. Currently you have 
 
 `.editorconfig` in this repository contains the config that enforces the specified [SU Style Guide](https://github.com/diku-dk/su21-guides/blob/master/guides/CSharpStyle.md).
 
-### How to set-up EditorConfig with VS Code for the SU Course
+### How to set-up EditorConfig with VS Code
 1. First ensure that you **have the C# and EditorConfig extensions**. These can be installed via the Marketplace or Extensions tab (on the left) in VS Code. Remember to restart after installing.
 
 2. Copy and place the [`.editorconfig`](https://github.com/diku-dk/su21-guides/blob/main/files/.editorconfig) file as is in the root of your project. 
