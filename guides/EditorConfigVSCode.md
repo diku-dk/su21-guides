@@ -16,6 +16,6 @@ IntelliSense for C# in VSCode is provided through OmniSharp. Currently you have 
 
 6. Now the `format` option in VS Code should use the options specified in the editorconfig file. This will happen as long as you are working in a project part of the solution which you have selected your intellisense (Omnisharp) to analyze (see step 4).
 
-7. You now have the option to format on save or with a special keybind. To format on save simply open Preferences as in step 3 and search and tick Format on Save. See [here](https://code.visualstudio.com/docs/getstarted/keybindings) for setting up a specific keybind or changing the keybind for save and format.
+7. You now have the option to format on save or with a special keybind. To format on save simply open Preferences as in step 3 and search and tick Format on Save. See [here](https://code.visualstudio.com/docs/getstarted/keybindings) for setting up a specific keybind or changing the keybind for save and format. You can try it out: `CTRL+SHIFT+P` -> `Format Document`.
 
 `.editorconfig` is a powerful tool to streamline style and formatting when working on different projects with different people. If you're curious about `.editorconfig` and its uses you can find more information about it on [the official site](https://editorconfig.org/)!
